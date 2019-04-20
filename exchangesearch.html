@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <!-- Font awesome API -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title> the exchange </title>
+  </head>
+  <body style="font-family: Rubik">
+
+
+
+
+
+<div class="container" id="pageDiv">
+
+  <!-- Navigation -->
+  <body id="page-top">  
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">anvil <i class="fas fa-network-wired"></i></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          about
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <a class="nav-link js-scroll-trigger" href="the_exchnage.html" style="color: #4BB178">the exchange</a>
+          <ul class="navbar-nav ml-auto">
+              <a class="nav-link js-scroll-trigger" href="" style="color: #4BB178">Download the app</a>
+  <!--             <a class="nav-link js-scroll-trigger" href="">Store</a>
+   -->          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Styling the search bar start -->
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+  </style>
+  </head>
+  <!-- Styling the search bar END -->
+
+  <body>
+
+  <h2>let your mind wander</h2>
+
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+
+
+<script>
+function myFunction() {
+  var input, filter, post, div, h1, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  post = document.getElementById("postings");
+  div = post.getElementsByTagName("div");
+  for (i = 0; i < div.length; i++) {
+    h1 = div[i].getElementsByTagName("h1")[0];
+    if (h1) {
+      txtValue = h1.textContent || h1.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        div[i].style.display = "";
+      } else {
+        div[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+  </body>
+  </html>
+
+
+
+
+
+
+
+  <!-- START POSTING -->
+  <!-- text half -->
+  
+  <div id="postings">
+  <div class="container" style="padding-top: 10%;">
+    <div class="row border">
+      <div class="col-6">
+        <h1>Réveille Coffee Co.</h1>
+        <h4>200 Columbus Ave</h4>
+        <h4>San Francisco, CA 94133</h4>
+        <!-- ICONS -->
+        <div class="row">
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/coffee-machine.png" alt="img placeholder">   
+            <p>good coffee</p>
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/conversation.png" alt="img placeholder">  
+            <p>good conversations</p>  
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/dinner.png" alt="img placeholder">   
+            <p>limited seating</p>
+          </div>
+        </div>
+        <!-- END ICONS -->
+      </div>
+      <!--  Image half-->
+      <div class="col-6" style="padding-top: 5%; padding-bottom: 5%;">
+        <img width="460" height="345" style="width: 100%; height: auto;" src="img/reveille.png" alt="img placeholder">  
+      </div>
+    </div>
+  </div>
+  <!-- END OF POSTING -->
+
+
+  <!-- START POSTING -->
+  <!-- text half -->
+  <div id="myPost" class="container" style="padding-top: 10%;">
+    <div class="row border">
+      <div class="col-6">
+        <h1>Noon All Day</h1>
+        <h4>690 Indiana St, </h4>
+        <h4>San Francisco, CA 94107</h4>
+        <!-- ICONS -->
+        <div class="row">
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/coffee-machine.png" alt="img placeholder">   
+            <p>good coffee</p>
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/dinner.png" alt="img placeholder">  
+            <p>inside + outside seating</p>  
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/gift.png" alt="img placeholder">   
+            <p>live dj</p>
+          </div>
+        </div>
+        <!-- END ICONS -->
+      </div>
+      <!--  Image half-->
+      <div class="col-6" style="padding-top: 5%; padding-bottom: 5%;">
+        <img width="450" height="340" style="width: 100%; height: auto;" src="img/noonallday.jpg" alt="img placeholder">  
+      </div>
+    </div>
+  </div>
+  <!-- END OF POSTING -->
+
+
+  <!-- START POSTING -->
+  <!-- text half -->
+  <div id="myPost" class="container" style="padding-top: 10%;">
+    <div class="row border">
+      <div class="col-6">
+        <h1>Greaser Coffee</h1>
+        <h4>1730 Yosemite Ave, </h4>
+        <h4>San Francisco, CA 94124</h4>
+        <!-- ICONS -->
+        <div class="row">
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/coffee-machine.png" alt="img placeholder">   
+            <p>good coffee</p>
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/dinner.png" alt="img placeholder">  
+            <p>outside seating</p>  
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/effort.png" alt="img placeholder">   
+            <p>grab & go</p>
+          </div>
+        </div>
+        <!-- END ICONS -->
+      </div>
+      <!--  Image half-->
+      <div class="col-6" style="padding-top: 5%; padding-bottom: 5%;">
+        <img width="450" height="340" style="width: 100%; height: auto;" src="img/greaser.jpg" alt="img placeholder">  
+      </div>
+    </div>
+  </div>
+  <!-- END OF POSTING -->
+
+  <!-- START POSTING -->
+  <!-- text half -->
+  <div  class="container" style="padding-top: 10%;">
+    <div id="myPost" class="row border">
+      <div class="col-6">
+        <h1>Andytown Coffee Roasters</h1>
+        <h4>3655 Lawton St,</h4>
+        <h4>San Francisco, CA 94122</h4>
+        <!-- ICONS -->
+        <div class="row">
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/coffee-machine.png" alt="img placeholder">   
+            <p>good coffee</p>
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/dinner.png" alt="img placeholder">  
+            <p>fresh pastries</p>  
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/gift.png" alt="img placeholder">   
+            <p>roasts own beans</p>
+          </div>
+        </div>
+        <!-- END ICONS -->
+      </div>
+      <!--  Image half-->
+      <div class="col-6" style="padding-top: 5%; padding-bottom: 5%;">
+        <img width="450" height="340" style="width: 100%; height: auto;" src="img/andytown.jpeg" alt="img placeholder">  
+      </div>
+    </div>
+  </div>
+  <!-- END OF POSTING -->
+
+    <!-- START POSTING -->
+  <!-- text half -->
+  <div  class="container" style="padding-top: 10%;">
+    <div id="myPost" class="row border">
+      <div class="col-6">
+        <h1>Workshope Cafe FiDi</h1>
+        <h4>180 Montgomery St #100,</h4>
+        <h4>San Francisco, CA 94104</h4>
+        <!-- ICONS -->
+        <div class="row">
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/man-working-on-a-laptop-from-side-view.png" alt="img placeholder"> 
+            <p>great place to work</p>
+            <p>over 50 seats</p>
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/hasFood.png" alt="img placeholder">  
+            <p>full menu - bfast & lunch</p>  
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/moon.png" alt="img placeholder">   
+            <p>open late</p>
+          </div>
+        </div>
+
+        <!-- END ICONS -->
+      </div>
+      <!--  Image half-->
+      <div class="col-6" style="padding-top: 5%; padding-bottom: 5%;">
+        <img width="450" height="340" style="width: 100%; height: auto;" src="img/workshopCafe.jpeg" alt="img placeholder">  
+      </div>
+    </div>
+  </div>
+  <!-- END OF POSTING -->
+    <!-- START POSTING -->
+  <!-- text half -->
+  <div  class="container" style="padding-top: 10%;">
+    <div id="myPost" class="row border">
+      <div class="col-6">
+        <h1>Juice Shop</h1>
+        <h4>353 Pine Street at, Montgomery St,</h4>
+        <h4>San Francisco, CA 94104</h4>
+        <!-- ICONS -->
+        <div class="row">
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/effort.png" alt="img placeholder"> 
+            <p>grab & go</p>
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/sunrise.png" alt="img placeholder">  
+            <p>open early!</p>  
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/gift.png" alt="img placeholder">   
+            <p>grab tiny bites</p>
+          </div>
+        </div>
+
+        <!-- END ICONS -->
+      </div>
+      <!--  Image half-->
+      <div class="col-6" style="padding-top: 5%; padding-bottom: 5%;">
+        <img width="450" height="340" style="width: 100%; height: auto;" src="img/juiceshop.JPG" alt="img placeholder">  
+      </div>
+    </div>
+  </div>
+  <!-- END OF POSTING -->
+
+    <!-- START POSTING -->
+  <!-- text half -->
+  <div  class="container" style="padding-top: 10%;">
+    <div id="myPost" class="row border">
+      <div class="col-6">
+        <h1>CafeX</h1>
+        <h4>One Bush Plaza,</h4>
+        <h4>San Francisco, CA 94104</h4>
+        <!-- ICONS -->
+        <div class="row">
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/effort.png" alt="img placeholder"> 
+            <p>grab & go</p>
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/tree-silhouette.png" alt="img placeholder">
+            <p>outdoor seating</p>  
+          </div>
+          <div class="col-4">
+            <img width="50" height="50" height: auto;" src="icons/moon.png" alt="img placeholder">   
+            <p>open late m-f!</p>
+          </div>
+        </div>
+
+        <!-- END ICONS -->
+      </div>
+      <!--  Image half-->
+      <div class="col-6" style="padding-top: 5%; padding-bottom: 5%;">
+        <img width="450" height="340" style="width: 100%; height: auto;" src="img/cafeXbush.png" alt="img placeholder">  
+      </div>
+    </div>
+  </div>
+  <!-- END OF POSTING -->
+
+
+
+
+    <div class="jumbotron jumbotron-fluid" style="background-color: #4BB178;>
+      <div class="container" >
+        <h1 style="color: white" class="display-4">anvil</h1>
+        <p  style="color: white"class="lead">The anvil serves as a work bench to the blacksmith, where the metal to be forged is placed. Anvils may seem clunky and heavy, but they are a highly refined tool carefully shaped to suit a blacksmith's needs. </p>
+      </div>
+  </div>
+  <!-- end jumbotron -->
+  </div>
+  </div>
+  <!-- END OF POSTING -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

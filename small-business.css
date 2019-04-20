@@ -1,0 +1,21 @@
+/*!
+ * Start Bootstrap - Small Business (https://startbootstrap.com/template-overviews/small-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+#buttons {
+	background-color: #4BB178; 
+	color: white;
+}
+#bigCard {
+	outline-color: #4BB178; 
+}
+
+#postings {
+	outline-color: #4BB178; 
+
+}
